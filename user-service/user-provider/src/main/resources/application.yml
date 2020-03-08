@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations: classpath*:com/mall/show/userprovider/userprovider/dal/persistence/*Mapper.xml"
+  type-aliases-package: com.mall.show.userprovider.userprovider.dal.entity
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
